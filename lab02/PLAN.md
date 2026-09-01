@@ -15,9 +15,12 @@ Short increments. The requirements are uncertain, feedback is fast to get and fa
 ## Milestones
 
 | Milestone | When | What is true then |
-|---|---|---|
+| Menu display working | Week 2 | Students can view the full canteen menu with prices on the ordering page. |
+| Ordering and payment live | Week 4 | A student can place and pay for an order end to end. |
+| Pilot with real students | Week 6 | At least 10 students have used SkipLine to order food for pickup. |
 
 ## Risks
 
 | Risk | Likelihood | Mitigation |
-|---|---|---|
+| Payment provider integration takes longer than expected | Medium | Start payment integration early, in parallel with menu display, and use a simple sandbox provider for testing. |
+| Canteen staff are unfamiliar with the incoming-orders screen | Medium | Run a short training session with kitchen staff before the pilot week and provide a one-page printed guide. |
