@@ -1,8 +1,8 @@
 # CampusPulse stakeholder analysis
 
-Name or team:
+Name or team: Ilina Krumova 
 
-Date:
+Date: 08.09
 
 Read the stakeholder notes in the lab handout before completing this file.
 Use the stakeholder types and power-interest quadrants from Week 2, Lecture 2.
