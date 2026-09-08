@@ -82,52 +82,55 @@ permission boundary, privacy rule, or other non-happy path.
 
 ### US-1 [Source: S?, UR-?]
 
-As a <role>,
+As a student attendee,
 
-I want <capability>,
+I want my RSVP identity to be private by default,
 
-so that <benefit>.
+so that I can attend events without automatically revealing my participation.
 
 Acceptance criteria:
 
--
--
+- When a student RSVPs to an event, their identity is not publicly visible by default.
+
+- A student can choose to make their RSVP identity publicly visible.
 
 ### US-2 [Source: S?, UR-?]
 
-As a <role>,
+As a group officer,
 
-I want <capability>,
+I want approved officers to create and publish events for different audiences,
 
-so that <benefit>.
+so that our group can safely manage university-wide and members-only events.
 
 Acceptance criteria:
 
--
--
+- An approved group officer can publish an event and select university-wide or members-only visibility.
+
+- A user who is not an approved group officer cannot publish an event for the group.
 
 ### US-3 [Source: S?, UR-?]
 
-As a <role>,
+As a campus moderator,
 
-I want <capability>,
+I want to review reports and hide reported events while preserving evidence,
 
-so that <benefit>.
+so that I can respond to harmful content and support later appeals.
 
 Acceptance criteria:
 
--
--
+- A moderator can view what was reported, the reason for the report, and hide the reported event.
+
+- When an event is hidden, the evidence and the identity of the moderator who made the decision remain recorded for an appeal.
 
 ## 6. MoSCoW summary
 
 List requirement or story IDs in every category. The Won't category must state
 what is excluded from this release.
 
-- Must:
-- Should:
-- Could:
-- Won't this release:
+- Must: UR-1, UR-2, UR-3, UR-4, UR-5, UR-6, FR-1, FR-2, FR-3, FR-4, FR-5, FR-6, NFR-1, NFR-2, NFR-4, US-1, US-2, US-3
+- Should: NFR-3
+- Could: Additional notification preferences for event updates
+- Won't this release: Direct messages, external users, payments, video hosting, AI recommendations, and a native mobile application
 
 ## 7. Traceability
 
@@ -136,10 +139,10 @@ requirement, a system requirement, and a user story.
 
 | Stakeholder need | User requirement | System requirement | User story |
 |---|---|---|---|
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
+| S1 - RSVP privacy | UR-2 | FR-2, NFR-2 | US-1 |
+| S2 - Approved officers can publish | UR-3 | FR-3 | US-2 |
+| S2 - Event audience visibility | UR-3 | FR-4 | US-2 |
+| S3 - Moderation and appeal evidence | UR-5 | FR-6 | US-3 |
 
 ## 8. Assumptions and open questions
 
