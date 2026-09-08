@@ -50,13 +50,12 @@ Write at least six observable system behaviours. Start each one with "The
 system shall" and trace it to one or more user requirements.
 
 Format: `FR-1 [Must] The system shall ... [Source: UR-1]`
-
-- FR-1 [Must] The system shall
-- FR-2 [Must] The system shall
-- FR-3 [Must] The system shall
-- FR-4 [Must] The system shall
-- FR-5 [Must] The system shall
-- FR-6 [Must] The system shall
+- FR-1 [Must] The system shall allow students to follow verified university groups and view their events and announcements. [Source: UR-1]
+- FR-2 [Must] The system shall keep a student's RSVP identity private by default and allow the student to choose whether it is publicly visible. [Source: UR-2]
+- FR-3 [Must] The system shall allow only approved group officers to publish announcements and events. [Source: UR-3]
+- FR-4 [Must] The system shall allow group officers to set an event audience as university-wide or members-only. [Source: UR-3]
+- FR-5 [Must] The system shall notify students who RSVP'd when an event's time or location changes. [Source: UR-4]
+- FR-6 [Must] The system shall allow campus moderators to review reports, hide reported events, preserve evidence for appeals, and record who made each moderation decision. [Source: UR-5]
 
 ## 4. Non-functional requirements
 
@@ -67,10 +66,13 @@ question in Section 8.
 
 Format: `NFR-1 [Must] The system shall ... [Measure: target and condition] [Source: UR-1]`
 
-- NFR-1 [Must] The system shall
-- NFR-2 [Must] The system shall
-- NFR-3 [Should] The system shall
-- NFR-4 [Must] The system shall
+- NFR-1 [Must] The system shall support at least 5,000 student accounts and 200 verified groups during the pilot. [Measure: 5,000 students and 200 groups supported before Orientation Week] [Source: UR-1]
+
+- NFR-2 [Must] The system shall present RSVP identities as private by default for every newly created RSVP. [Measure: 100% of new RSVPs are private unless the student changes the visibility setting] [Source: UR-2]
+
+- NFR-3 [Should] The system shall provide an accessible browser interface usable with common screen readers. [Measure: all core event, announcement, follow, and RSVP flows can be completed using a screen reader] [Source: UR-1]
+
+- NFR-4 [Must] The system shall delete attendance data for cancelled events within 30 days of cancellation. [Measure: 100% of attendance records for cancelled events are deleted within 30 days] [Source: UR-6]
 
 ## 5. User stories and acceptance criteria
 
@@ -146,8 +148,10 @@ answer.
 
 ### Assumptions
 
-- A1:
+- A1: The RSVP privacy requirement is interpreted as applying to 100% of newly created RSVPs by default.
+- A2: Screen-reader accessibility is required for all core flows: viewing events and announcements, following groups, and RSVP.
 
 ### Open questions
 
-- Q1:
+- Q1: What peak traffic should CampusPulse support during Orientation Week?
+- Q2: Which accessibility standard and screen readers should be used for formal acceptance testing?
