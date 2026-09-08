@@ -14,17 +14,21 @@ short enough to test and trace.
 ### In scope
 
 List at least three capabilities that belong in the first release.
-
--
--
--
+- Verified university groups and official badges
+- Announcements and campus events
+- Following groups and RSVP functionality
+- Audience visibility and event update notifications
+- Reporting, moderation, and appeals
 
 ### Out of scope
 
 List at least two explicit exclusions.
-
--
--
+- Direct messages
+- External users
+- Payments
+- Video hosting
+- AI recommendations
+- Native mobile application
 
 ## 2. User requirements
 
@@ -33,11 +37,12 @@ to the stakeholder evidence.
 
 Format: `UR-1 [Must] ... [Source: S1]`
 
-- UR-1 [Must]
-- UR-2 [Must]
-- UR-3 [Must]
-- UR-4 [Must]
-- UR-5 [Must]
+- UR-1 [Must] Students can follow university groups and view their events and announcements in one place. [Source: S1]
+- UR-2 [Must] Students can RSVP to events without their identity being publicly visible unless they choose otherwise. [Source: S1]
+- UR-3 [Must] Approved group officers can collaboratively create and publish announcements and events for appropriate audiences. [Source: S2]
+- UR-4 [Must] Students who RSVP to an event are informed when its time or location changes. [Source: S2]
+- UR-5 [Must] Campus moderators can review reports, hide reported events, preserve evidence for appeals, and record moderation decisions. [Source: S3]
+- UR-6 [Must] Attendance data for a cancelled event is deleted within 30 days. [Source: S5]
 
 ## 3. Functional requirements
 
