@@ -1,8 +1,8 @@
 # CampusPulse requirements
 
-Name or team:
+Name or team: Ilina Krumova
 
-Date:
+Date: 08.09
 
 Status: working draft
 
@@ -51,7 +51,7 @@ system shall" and trace it to one or more user requirements.
 
 Format: `FR-1 [Must] The system shall ... [Source: UR-1]`
 - FR-1 [Must] The system shall allow students to follow verified university groups and view their events and announcements. [Source: UR-1]
-- FR-2 [Must] The system shall keep a student's RSVP identity private by default and allow the student to choose whether it is publicly visible. [Source: UR-2]
+- FR-2 [Must] The system shall make a student's identity private when a new RSVP is created and shall allow the student to explicitly choose to make it publicly visible. [Source: UR-2]
 - FR-3 [Must] The system shall allow only approved group officers to publish announcements and events. [Source: UR-3]
 - FR-4 [Must] The system shall allow group officers to set an event audience as university-wide or members-only. [Source: UR-3]
 - FR-5 [Must] The system shall notify students who RSVP'd when an event's time or location changes. [Source: UR-4]
@@ -70,7 +70,7 @@ Format: `NFR-1 [Must] The system shall ... [Measure: target and condition] [Sour
 
 - NFR-2 [Must] The system shall present RSVP identities as private by default for every newly created RSVP. [Measure: 100% of new RSVPs are private unless the student changes the visibility setting] [Source: UR-2]
 
-- NFR-3 [Should] The system shall provide an accessible browser interface usable with common screen readers. [Measure: all core event, announcement, follow, and RSVP flows can be completed using a screen reader] [Source: UR-1]
+- NFR-3 [Should] The system shall allow all core event, announcement, follow, and RSVP flows to be completed using a screen reader. [Measure: all core event, announcement, follow, and RSVP flows can be completed using a screen reader] [Source: UR-1]
 
 - NFR-4 [Must] The system shall delete attendance data for cancelled events within 30 days of cancellation. [Measure: 100% of attendance records for cancelled events are deleted within 30 days] [Source: UR-6]
 
@@ -80,7 +80,7 @@ Write at least three stories from different stakeholder viewpoints. Each story
 needs at least two acceptance criteria. Across the set, include a failure,
 permission boundary, privacy rule, or other non-happy path.
 
-### US-1 [Source: S?, UR-?]
+### US-1 [Source: S1, UR-2]
 
 As a student attendee,
 
@@ -94,7 +94,7 @@ Acceptance criteria:
 
 - A student can choose to make their RSVP identity publicly visible.
 
-### US-2 [Source: S?, UR-?]
+### US-2 [Source: S2, UR-3]
 
 As a group officer,
 
@@ -108,7 +108,7 @@ Acceptance criteria:
 
 - A user who is not an approved group officer cannot publish an event for the group.
 
-### US-3 [Source: S?, UR-?]
+### US-3 [Source: S3, UR-5]
 
 As a campus moderator,
 
@@ -143,6 +143,7 @@ requirement, a system requirement, and a user story.
 | S2 - Approved officers can publish | UR-3 | FR-3 | US-2 |
 | S2 - Event audience visibility | UR-3 | FR-4 | US-2 |
 | S3 - Moderation and appeal evidence | UR-5 | FR-6 | US-3 |
+
 
 ## 8. Assumptions and open questions
 
