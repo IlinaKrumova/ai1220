@@ -124,7 +124,7 @@ Observed result and why it agrees with the contract: Valid requests returned 201
 
 ## Submission
 
-- Final commit hash (`Complete lab04 playlist`): TODO
+- Final commit hash (`Complete lab04 playlist`): 284a685
 - Files included and review notes: TODO
 - Push and GitHub verification: TODO
 - Optional stretch, if attempted: TODO
