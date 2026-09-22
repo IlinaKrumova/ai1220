@@ -1,0 +1,105 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="A7S-pK7C4oQMrlpHD5WK">
+    <mxGraphModel dx="2813" dy="2603" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="zLdp4_docB3wvU6MSCNn-2" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;b&gt;Workshop Board API - Component Diagram&lt;/b&gt;" vertex="1">
+          <mxGeometry height="130" width="140" x="-100" y="-20" as="geometry" />
+        </mxCell>
+        <mxCell id="zLdp4_docB3wvU6MSCNn-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;" value="Workshop Board API&#xa;[Container Boundary]" vertex="1">
+          <mxGeometry height="430" width="760" x="80" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="zLdp4_docB3wvU6MSCNn-14" edge="1" parent="1" source="zLdp4_docB3wvU6MSCNn-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.75;entryDx=0;entryDy=0;" target="zLdp4_docB3wvU6MSCNn-11" value="Verify credential; receive student ID, name and email [HTTPS/API]">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="150" y="635" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zLdp4_docB3wvU6MSCNn-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;div&gt;Authentication Component&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;[Component]&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Verifies student identity and provides&lt;/div&gt;&lt;div&gt;student ID, name and email.&lt;/div&gt;" vertex="1">
+          <mxGeometry height="110" width="170" x="90" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="zLdp4_docB3wvU6MSCNn-22" edge="1" parent="1" source="zLdp4_docB3wvU6MSCNn-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="zLdp4_docB3wvU6MSCNn-10" value="Read/write workshop and ownership data [SQL]">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="450" y="70" />
+              <mxPoint x="1125" y="70" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zLdp4_docB3wvU6MSCNn-5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Workshop Component&#xa;&#xa;[Component]&#xa;&#xa;Creates and publishes workshops&#xa;and enforces ownership rules." vertex="1">
+          <mxGeometry height="120" width="180" x="320" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="zLdp4_docB3wvU6MSCNn-17" edge="1" parent="1" source="zLdp4_docB3wvU6MSCNn-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.75;entryY=0;entryDx=0;entryDy=0;" target="zLdp4_docB3wvU6MSCNn-9" value="Browse/view workshop and reservation data [HTTPS/JSON]">
+          <mxGeometry relative="1" x="0.002" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="660" y="120" />
+              <mxPoint x="-165" y="120" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zLdp4_docB3wvU6MSCNn-6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;div&gt;Workshop Query Component&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;[Component]&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Returns workshop details, remaining seats,&lt;/div&gt;&lt;div&gt;student reservation and organiser-only&lt;/div&gt;&lt;div&gt;attendee information.&lt;/div&gt;" vertex="1">
+          <mxGeometry height="130" width="200" x="560" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="zLdp4_docB3wvU6MSCNn-19" edge="1" parent="1" source="zLdp4_docB3wvU6MSCNn-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="zLdp4_docB3wvU6MSCNn-10" value="Atomically read/write reservation [SQL transaction]">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="300" y="710" />
+              <mxPoint x="920" y="710" />
+              <mxPoint x="920" y="250" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zLdp4_docB3wvU6MSCNn-20" edge="1" parent="1" source="zLdp4_docB3wvU6MSCNn-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="zLdp4_docB3wvU6MSCNn-8" value="New reservation + student email">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zLdp4_docB3wvU6MSCNn-7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Reservation Component&#xa;&#xa;[Component]&#xa;&#xa;Creates reservations while enforcing&#xa;capacity and one seat per student." vertex="1">
+          <mxGeometry height="120" width="180" x="210" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="zLdp4_docB3wvU6MSCNn-21" edge="1" parent="1" source="zLdp4_docB3wvU6MSCNn-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="zLdp4_docB3wvU6MSCNn-12" value="Request confirmation email [HTTPS/API]">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zLdp4_docB3wvU6MSCNn-8" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Confirmation Component&#xa;&#xa;[Component]&#xa;&#xa;Requests confirmation email after&#xa;a new reservation succeeds." vertex="1">
+          <mxGeometry height="150" width="210" x="600" y="385" as="geometry" />
+        </mxCell>
+        <mxCell id="zLdp4_docB3wvU6MSCNn-13" edge="1" parent="1" source="zLdp4_docB3wvU6MSCNn-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="zLdp4_docB3wvU6MSCNn-4" value="Verify credential [HTTPS/JSON]">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zLdp4_docB3wvU6MSCNn-15" edge="1" parent="1" source="zLdp4_docB3wvU6MSCNn-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="zLdp4_docB3wvU6MSCNn-5" value="Create/publish workshop [HTTPS/JSON] ">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="410" y="210" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zLdp4_docB3wvU6MSCNn-18" edge="1" parent="1" source="zLdp4_docB3wvU6MSCNn-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.75;entryDx=0;entryDy=0;" target="zLdp4_docB3wvU6MSCNn-7" value="Reserve(workshopId, verified student) [HTTPS/JSON]">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-210" y="490" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zLdp4_docB3wvU6MSCNn-9" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Web Application&#xa;&#xa;[Container]&#xa;&#xa;Sends workshop, query and&#xa;reservation requests to the API." vertex="1">
+          <mxGeometry height="200" width="180" x="-300" y="185" as="geometry" />
+        </mxCell>
+        <mxCell id="zLdp4_docB3wvU6MSCNn-10" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Database&#xa;&#xa;[Container: Relational Database]&#xa;&#xa;Stores workshops, ownership&#xa;and reservations persistently." vertex="1">
+          <mxGeometry height="160" width="210" x="1020" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="zLdp4_docB3wvU6MSCNn-11" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Campus Identity&#xa;&#xa;[External System]&#xa;&#xa;Verifies credentials and supplies&#xa;student ID, name and email." vertex="1">
+          <mxGeometry height="180" width="120" x="-270" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="zLdp4_docB3wvU6MSCNn-12" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="University Mail&#xa;&#xa;[External System]&#xa;&#xa;Sends reservation confirmation emails." vertex="1">
+          <mxGeometry height="190" width="190" x="1040" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="zLdp4_docB3wvU6MSCNn-24" edge="1" parent="1" source="zLdp4_docB3wvU6MSCNn-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=-0.029;entryY=0.175;entryDx=0;entryDy=0;entryPerimeter=0;" target="zLdp4_docB3wvU6MSCNn-10" value="Read workshop and reservation data [SQL]">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zLdp4_docB3wvU6MSCNn-25" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Legend:&#xa;[Component] = related code inside Workshop Board API&#xa;[Container] = supporting application or data store&#xa;[External System] = system outside our team&#xa;[Container Boundary] = Workshop Board API&#xa;→ = interface / information flow&#xa;[HTTPS/JSON], [HTTPS/API], [SQL] = communication mechanism" vertex="1">
+          <mxGeometry height="200" width="500" x="900" y="760" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

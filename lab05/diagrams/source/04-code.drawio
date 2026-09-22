@@ -1,0 +1,16 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="aOZfrNauXhrNMoOMWb8k">
+    <mxGraphModel dx="785" dy="601" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="ZoUtt3qLP8X6FJJS91Rs-1" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;b&gt;Reservation Component - Code-Level Sketch&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="200" x="190" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="ZoUtt3qLP8X6FJJS91Rs-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;" value="&lt;div&gt;Reservation Component&lt;/div&gt;&lt;div&gt;[Component Boundary]&lt;/div&gt;" vertex="1">
+          <mxGeometry height="360" width="630" x="90" y="160" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

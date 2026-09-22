@@ -1,0 +1,42 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="VrLpLbTtSBX7wdjKtPKI">
+    <mxGraphModel dx="2420" dy="1202" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="pN34i7k80w6GPK2Yk71J-1" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;b&gt;Campus Workshop Board - System Context&lt;/b&gt;" vertex="1">
+          <mxGeometry height="100" width="150" x="320" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="pN34i7k80w6GPK2Yk71J-9" edge="1" parent="1" source="pN34i7k80w6GPK2Yk71J-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="pN34i7k80w6GPK2Yk71J-4" value="Verify credentials; receive student ID, name and email [HTTPS]">
+          <mxGeometry relative="1" x="0.0173" y="27" as="geometry">
+            <mxPoint x="-11" y="2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pN34i7k80w6GPK2Yk71J-10" edge="1" parent="1" source="pN34i7k80w6GPK2Yk71J-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.75;entryDx=0;entryDy=0;" target="pN34i7k80w6GPK2Yk71J-5" value="Request reservation confirmation email [HTTPS/API]">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pN34i7k80w6GPK2Yk71J-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;div&gt;Campus Workshop Board&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;[Software System]&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Allows university students to browse,&lt;/div&gt;&lt;div&gt;create, publish and reserve workshops.&lt;/div&gt;" vertex="1">
+          <mxGeometry height="160" width="335" x="237.5" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="pN34i7k80w6GPK2Yk71J-8" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="pN34i7k80w6GPK2Yk71J-2" value="Browses, creates/publishes and reserves workshops [HTTPS]">
+          <mxGeometry relative="1" x="-0.005" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="-100" y="260" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pN34i7k80w6GPK2Yk71J-3" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" value="University Student&#xa;&#xa;[Person]&#xa;&#xa;Browses workshops, creates/publishes workshops,&#xa;reserves seats and views reservations." vertex="1">
+          <mxGeometry height="130" width="70" x="-180" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="pN34i7k80w6GPK2Yk71J-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;div&gt;Campus Identity&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;[External System]&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Verifies university credentials and supplies&lt;/div&gt;&lt;div&gt;student ID, name and email.&lt;/div&gt;" vertex="1">
+          <mxGeometry height="170" width="335" x="930" y="245" as="geometry" />
+        </mxCell>
+        <mxCell id="pN34i7k80w6GPK2Yk71J-5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;div&gt;University Mail&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;[External System]&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Sends reservation confirmation emails.&lt;/div&gt;" vertex="1">
+          <mxGeometry height="170" width="335" x="515" y="730" as="geometry" />
+        </mxCell>
+        <mxCell id="pN34i7k80w6GPK2Yk71J-11" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;div&gt;Legend:&lt;/div&gt;&lt;div&gt;[Person] = user of the system&lt;/div&gt;&lt;div&gt;[Software System] = system being designed&lt;/div&gt;&lt;div&gt;[External System] = system outside our team&#39;s responsibility&lt;/div&gt;&lt;div&gt;→ = interaction / information flow&lt;/div&gt;" vertex="1">
+          <mxGeometry height="360" width="220" x="-240" y="490" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
