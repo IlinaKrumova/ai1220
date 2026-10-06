@@ -1,0 +1,9 @@
+Codex version: codex-cli 0.160.1
+Tester reads AGENTS.md and REQUIREMENTS.md: PASS
+Tester writes tests/check.txt: PASS
+Tester cannot read fees.py or README.md: PASS
+Tester cannot change fees.py: PASS
+Tester cannot reach example.com: PASS
+Reviewer reads AGENTS.md and fees.py: PASS
+Reviewer cannot read tests/check.txt: PASS
+Reviewer cannot change fees.py: PASS
