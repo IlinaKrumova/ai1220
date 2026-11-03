@@ -1,0 +1,31 @@
+// The whole page. React draws <App /> inside index.html (see main.jsx).
+import { useState } from 'react';
+import Welcome from './Welcome.jsx';
+import DrinkCard from './DrinkCard.jsx';
+
+export default function App() {
+  // Exercise 3: the number of cups in the order, starting at 0.
+  const [cups, setCups] = useState(0);
+
+  return (
+    <main className="cart">
+      <Welcome />
+
+      <div className="menu">
+        <DrinkCard name="Latte" price={15} />
+        <DrinkCard name="Tea" price={8} />
+        <DrinkCard name="Hot chocolate" price={12} />
+      </div>
+
+      <p className="order">Cups ordered: {cups}</p>
+
+      {/* Exercise 4: the offer is shown only from 3 cups on. */}
+      {cups >= 3 && <p className="offer">Free cookie with your order!</p>}
+
+      <div>
+        <button onClick={() => setCups(cups + 1)}>Add a cup</button>
+        <button onClick={() => setCups(0)}>Clear order</button>
+      </div>
+    </main>
+  );
+}
