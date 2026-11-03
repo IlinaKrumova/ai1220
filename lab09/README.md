@@ -17,27 +17,4 @@ the weights and the submission steps are in `lab_week_09_coffee-cart_sheet.pdf`.
 | `package.json`, `package-lock.json`, `vite.config.js` | The project, its exact package versions and its configuration. |
 | `.gitignore` | Keeps `node_modules` out of Git. |
 
-## Run
 
-You need Node.js 22.12 or later (`node -v`).
-
-```sh
-npm install     # once; needs the internet
-npm run dev     # the page at http://127.0.0.1:5175, stop with Ctrl+C
-npm test        # the public checks, in a second terminal
-```
-
-The page changes each time you save a file. Reloading it starts a new order.
-
-## Submit
-
-From the top folder of your `ai1220` repository:
-
-```sh
-git add lab09
-git commit -m "Lab 9 coffee cart"
-git push
-```
-
-Check on GitHub that `lab09/src` holds `App.jsx`, `Welcome.jsx` and
-`DrinkCard.jsx`, and that no `node_modules` folder was pushed.
